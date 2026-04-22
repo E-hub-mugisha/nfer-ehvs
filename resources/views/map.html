@@ -1,0 +1,65 @@
+nfer-ehvs/
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   │   ├── Admin/
+│   │   │   │   ├── DashboardController.php
+│   │   │   │   ├── UserController.php
+│   │   │   │   ├── EmployerVerificationController.php
+│   │   │   │   ├── DisputeController.php
+│   │   │   │   ├── ReportController.php
+│   │   │   │   └── SkillController.php
+│   │   │   ├── Employer/
+│   │   │   │   ├── DashboardController.php
+│   │   │   │   ├── ProfileController.php
+│   │   │   │   ├── EmploymentRecordController.php
+│   │   │   │   ├── FeedbackController.php
+│   │   │   │   └── SearchController.php
+│   │   │   └── Employee/
+│   │   │       ├── DashboardController.php
+│   │   │       ├── ProfileController.php
+│   │   │       ├── HistoryController.php
+│   │   │       └── DisputeController.php
+│   │   └── Middleware/
+│   │       └── EnsureAccountType.php
+│   ├── Models/
+│   │   ├── User.php
+│   │   ├── Employee.php
+│   │   ├── Employer.php
+│   │   ├── EmploymentRecord.php
+│   │   ├── EmployerFeedback.php
+│   │   ├── Skill.php
+│   │   └── Dispute.php
+│   └── Policies/
+│       └── EmploymentRecordPolicy.php
+├── database/
+│   ├── migrations/
+│   └── seeders/
+│       ├── RolesAndPermissionsSeeder.php
+│       └── AdminSeeder.php
+└── resources/views/
+    ├── layouts/
+    │   ├── app.blade.php
+    │   └── partials/
+    │       ├── sidebar-admin.blade.php
+    │       ├── sidebar-employer.blade.php
+    │       └── sidebar-employee.blade.php
+    ├── components/
+    │   ├── star-rating.blade.php
+    │   └── conduct-badge.blade.php
+    ├── admin/
+    │   ├── dashboard.blade.php
+    │   ├── employers/ (index, show)
+    │   ├── employees/ (index, show)
+    │   ├── disputes/  (index, show)
+    │   └── reports/   (index)
+    ├── employer/
+    │   ├── dashboard.blade.php
+    │   ├── records/ (index, create, edit, show)
+    │   ├── feedback/ (create, edit)
+    │   └── search/  (index, results, profile)
+    └── employee/
+        ├── dashboard.blade.php
+        ├── profile/ (show, edit)
+        ├── history/ (index)
+        └── disputes/ (index)
